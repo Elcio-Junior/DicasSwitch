@@ -20,12 +20,12 @@ class SwitchPedagio
         Carro { Passageiros: 0 } => 2.00m + 0.50m,
         Carro { Passageiros: 1 } => 2.00m,
         Carro { Passageiros: 2 } => 2.00m - 0.50m,
-        Carro c => 3.00m,
+        Carro _ => 3.00m,
 
         Caminhao { Eixos: 2 } => 3.50m + 1.00m,
         Caminhao { Eixos: 5 } => 3.50m,
         Caminhao { Eixos: 7 } => 3.50m + 0.50m,
-        Caminhao t => 4.50m,
+        Caminhao _=> 4.50m,
 
         _ => throw new NotImplementedException(nameof(veiculo)),
     };
